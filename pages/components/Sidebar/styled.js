@@ -10,7 +10,6 @@ const Search = styled.div`
   padding: 20px;
   border-radius: 2px;
 `;
-F;
 const SearchInput = styled.input`
   outline-width: 0;
   border: none;
