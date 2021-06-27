@@ -38,6 +38,8 @@ export const getServerSideProps = async (ctx) => {
       timestamp: messages.timestamp.toDate().getTime(),
     }));
 
+  console.log(messages);
+
   // PREP the chats
   const chatRes = await ref.get();
 
@@ -45,8 +47,6 @@ export const getServerSideProps = async (ctx) => {
     id: chatRes.id,
     ...chatRes.data(),
   };
-
-  console.log(chat);
 
   return {
     props: {
