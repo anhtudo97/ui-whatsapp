@@ -43,7 +43,7 @@ const MessageContainer = styled.div`
 `;
 
 const EndOfMessage = styled.div`
-  margin-bottom: 50px;
+  margin-bottom: 0px;
 `;
 
 const HeaderIcons = styled.div``;

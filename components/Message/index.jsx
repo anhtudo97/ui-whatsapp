@@ -1,5 +1,5 @@
 import { useAuthState } from 'react-firebase-hooks/auth';
-import styled from 'styled-components';
+import { Container, Reciever, Sender, Timestamp } from './styled';
 import { auth } from '../../lib/firebase';
 import moment from 'moment';
 
@@ -22,36 +22,3 @@ const Message = ({ user, message }) => {
 };
 
 export default Message;
-
-const Container = styled.div``;
-
-const MessageItem = styled.p`
-  width: fit-content;
-  padding: 15px;
-  border-radius: 8px;
-  margin: 10px;
-  min-width: 60px;
-  padding-bottom: 26px;
-  position: relative;
-  text-align: right;
-`;
-
-const Sender = styled(MessageItem)`
-  margin-left: auto;
-  background-color: #dcf8c6;
-`;
-
-const Reciever = styled(MessageItem)`
-  text-align: left;
-  background-color: whitesmoke;
-`;
-
-const Timestamp = styled.span`
-  color: gray;
-  padding: 10px;
-  font-size: 9px;
-  position: absolute;
-  bottom: 0;
-  text-align: right;
-  right: 0;
-`;

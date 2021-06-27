@@ -96,8 +96,9 @@ const ChatScreen = ({ chat, messages }) => {
 
   const scrollToBottom = () => {
     endOfMessagesRef.current.scrollIntoView({
-      behavior: 'smoothy',
-      block: 'start',
+      behavior: 'smooth',
+      block: 'end',
+      inline: 'nearest',
     });
   };
 
@@ -138,10 +139,10 @@ const ChatScreen = ({ chat, messages }) => {
           </IconButton>
         </HeaderIcons>
       </Header>
-      <MessageContainer>
+      <MessageContainer ref={endOfMessagesRef}>
         {/* show messages */}
         {showMessages()}
-        <EndOfMessage ref={endOfMessagesRef} />
+        <EndOfMessage />
       </MessageContainer>
 
       <InputContainer>
