@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-Checkout my website: [UI Whatsapp](https://ui-dashboard-crypto.vercel.app/)
+Checkout my website: [UI Whatsapp](https://whatsapp-puce.vercel.app/)
 
 ### Install
 
