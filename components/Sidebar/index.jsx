@@ -1,5 +1,5 @@
 import { IconButton } from '@material-ui/core';
-import ChatIcon from '@material-ui/icons/chat';
+import ChatIcon from '@material-ui/icons/Chat';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import SearchIcon from '@material-ui/icons/Search';
 import * as EmailValidator from 'email-validator';
